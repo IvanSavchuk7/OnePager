@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+p {
+    text-align: justify;
+}
+
+.section-title {
+    margin: 70px 0;
+    text-align: center;
+}
+
+.section-title * {
+    font-weight: 200;
+    font-size: 42px;
+}
+
+header {
+    height: 300px;
+    transform: skewY(-2deg);
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #224A98, #7f7fd5, #86a8e7, #FFFFFF);}
+
+.header-inner {
+    transform: skewY(2deg);
+    margin-left: 40px;
+    position: absolute;
+    background: transparent;
+    color: white;
+    font-weight: 500;
+    width: 70%;
+}
+
+.bg-block {
+    transform: skewY(2deg);
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to right, #224A98, #7f7fd5, #86a8e7, #FFFFFF);
+}
+
+main {
+}
+
+main > section {
+    padding: 0 25px;
+
+}
+
+main > section {
+    margin: 150px 0;
+}
+
+.section-intro {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-intro .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-intro .content .image-container {
+    width: calc(40% - 25px);
+    height: 450px;
+    background: #224a98;
+}
+
+.section-intro .content .text-container {
+    width: calc(60% - 25px);
+    padding: 5px 0;
+    font-size: 18px;
+}
+
+.section-anchors > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-anchors > ul > li {
+    border: 2px solid #224a98;
+    width: calc(90% / 4);
+}
+
+.section-news {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-news .content {
+    display: flex;
+    justify-content: space-between
+}
+
+.section-news hr {
+    border: 2px solid #224a98;
+}
+
+.section-news .content > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-news .content h3 {
+    font-size: 28px;
+    font-weight: 200;
+}
+
+.section-news .content .current-phase {
+    width: calc(50% - 40px);
+}
+
+.section-news .content .latest-news {
+    width: calc(50% - 40px);
+}
+
+.section-news .content .current-phase > div,
+.section-news .content .latest-news > div
+{
+    margin: 15px 0;
+}
+
+.section-news .content .latest-news h4 {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 0 10px 0;
+}
+
+
+.section-news .content .image-container {
+    height: 500px;
+    background: #224a98;
+}
+
+.section-contact {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-contact .content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.section-resources {
+    padding: 0;
+}
+
+.section-resources .content {
+    display: flex;
+    align-items: center;
+    height: 1000px;
+    transform: skewY(-2deg);
+    background: linear-gradient(to right, #224A98, #7f7fd5, #86a8e7, #FFFFFF);
+}
+
+.section-resources .content-inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transform: skewY(2deg);
+    height: 80%;
+
+}
+
+.section-resources .content .resource-card {
+    background: #FFFFFF;
+    height: 100%;
+    width: 40%;
+    max-width: 390px;
+    max-height: 700px;
+}
+
+.resource-card .image-container {
+    height: 50%;
+}
+
+.resource-card .text-container {
+    height: 50%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.resource-card .text-container h4 {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.resource-card .text-container a {
+    text-align: center;
+}
+
+.section-project-info article {
+    width: 70%;
+    border-bottom: 2px solid #224a98;
+    margin: 50px 0;
+}
+
+.section-project-info article p {
+    padding: 15px 0 10px 0;
+}
+
+.section-project-info article > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-project-info article {
+
+}
+
+.section-project-info article > div h3 {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: url("images/arrow_blue.png") center;
+    background-size: contain;
+    width: 36px;
+    height: 36px;
+    border: 2px solid #224a98;
+    transition: all .7s ease;
+
+}
+
+.collapsed {
+    max-height: 0;
+    opacity: 0;
+    padding: 0 20px;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.5s ease;
+}
+
+.expanded {
+    max-height: 500px;
+    opacity: 1;
+    padding: 20px;
+    overflow: hidden;
+    transition: max-height 1.25s ease, opacity 1.25s ease, padding 1.25s ease;
+}
+
+.rotated {
+    transform: rotate(-180deg);
+}
+
+
+

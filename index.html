@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <script>
+        function expandContent(button) {
+            const articleDiv = button.parentNode; // Navigate to the parent div of the button
+            const paragraph = articleDiv.nextElementSibling; // Navigate to the paragraph
+            if (paragraph.classList.contains('collapsed')) {
+                paragraph.classList.remove('collapsed');
+                paragraph.classList.add('expanded');
+            } else {
+                paragraph.classList.remove('expanded');
+                paragraph.classList.add('collapsed');
+            }
+            button.classList.toggle('rotated');
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="bg-block"></div>
+        <div class="header-inner">
+            <h1>Human Resources Strategy for Researchers (HRS4R)</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-intro" id="intro">
+            <div class="section-title"><h2>About</h2></div>
+
+            <div class="content">
+                <div class="image-container" style="font-size: 60px; display:flex; justify-content:center;align-items: center">
+                    <img src="https://www.aib.world/wp-content/uploads/2020/11/research-methods-covid-webinar-header.jpg" alt="" width="100%" height="100%">
+                </div>
+
+                <div class="text-container">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto assumenda consequatur deserunt dolorum eligendi eveniet excepturi fuga impedit incidunt minima modi mollitia natus, nisi odit, quaerat suscipit ullam ut?</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet doloremque dolores error facere harum, id ipsam, libero magnam optio perspiciatis praesentium rem voluptatum? Cumque doloremque dolorum officiis, omnis quae quas? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut deserunt distinctio doloremque eligendi eos est facilis fugit harum iure labore minus necessitatibus neque nostrum porro quas sapiente sequi suscipit, vero.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-anchors" id="anchors">
+            <ul>
+                <li>
+                    <a class="learn-more" href="#news">
+                        <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">News</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="learn-more" href="#contact">
+                        <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Contact</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="learn-more" href="#resources">
+                        <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Resources</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="learn-more">
+                        <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Project Information</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section-news" id="news">
+            <div class="section-title"><h2>News</h2></div>
+            <div class="content">
+                <div class="current-phase">
+                    <div>
+                        <h3>Current Phase</h3>
+                    </div>
+                    <div class="image-container" style="font-size: 60px; display:flex; justify-content:center;align-items: center">
+                        <img src="https://www.questionpro.com/blog/wp-content/uploads/2022/07/10-research-process-steps.jpg" alt="" width="100%" height="100%">
+                    </div>
+
+                    <div class="text-container">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cupiditate dolor doloribus earum et in inventore itaque laborum natus, necessitatibus nemo neque, pariatur quae qui, quo recusandae repellat sapiente vel?</p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="latest-news">
+                    <div>
+                        <h3>Latest News</h3>
+                    </div>
+
+                    <div>
+                        <h4>August 2024 - Some news information</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dicta id, illo inventore modi non totam voluptates! Asperiores, consectetur, eaque facere facilis harum molestiae nemo neque nesciunt pariatur tempore vel!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet consequuntur eius, exercitationem magni natus nobis reprehenderit sapiente! Adipisci aliquid atque debitis eveniet, harum maiores nobis numquam omnis placeat vitae voluptatem.</p>
+                    </div>
+
+                    <div>
+                        <h4>July 2024 - Some news information</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda, beatae delectus doloremque dolorum esse exercitationem harum iusto mollitia nam nihil numquam odio omnis perferendis quia, ratione reprehenderit saepe sequi?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet consequuntur eius, exercitationem magni natus nobis reprehenderit sapiente! Adipisci aliquid atque debitis eveniet, harum maiores nobis numquam omnis placeat vitae voluptatem.</p>
+                    </div>
+
+                    <div>
+                        <h4>June 2024 - Some news information</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ex illum incidunt inventore laborum provident quas sequi soluta suscipit voluptatum. Aperiam blanditiis dolorem et facere, impedit ipsam minima nemo non.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet consequuntur eius, exercitationem magni natus nobis reprehenderit sapiente! Adipisci aliquid atque debitis eveniet, harum maiores nobis numquam omnis placeat vitae voluptatem.</p>
+                    </div>
+
+                    <div>
+                        <h4>May 2024 - Some news information</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ex illum incidunt inventore laborum provident quas sequi soluta suscipit voluptatum. Aperiam blanditiis dolorem et facere, impedit ipsam minima nemo non.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet consequuntur eius, exercitationem magni natus nobis reprehenderit sapiente! Adipisci aliquid atque debitis eveniet, harum maiores nobis numquam omnis placeat vitae voluptatem.</p>
+                    </div>
+
+                    <div>
+                        <h4>April 2024 - Some news information</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ex illum incidunt inventore laborum provident quas sequi soluta suscipit voluptatum. Aperiam blanditiis dolorem et facere, impedit ipsam minima nemo non.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet consequuntur eius, exercitationem magni natus nobis reprehenderit sapiente! Adipisci aliquid atque debitis eveniet, harum maiores nobis numquam omnis placeat vitae voluptatem.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section  class="section-contact" id="contact">
+            <div class="section-title"><h2>Contact</h2></div>
+            <div class="content">
+                <div class="contact-card">
+                    <div class="card-icon"></div>
+
+                    <div class="image-container">
+                    </div>
+
+                    <div class="info-container">
+                        <h4>John Doe</h4>
+                        <span>Commissioner for the Human Resources Strategy for Researchers (HRS4R)</span>
+                        <div class="email">
+                            <img src="images/email_icon.png" alt="email_icon">
+                            <a href="mailto:john_doe1998@gmail.com">john_doe1998@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="card-icon"></div>
+
+                    <div class="image-container">
+                    </div>
+
+                    <div class="info-container">
+                        <h4>John Doe</h4>
+                        <span>Commissioner for the Human Resources Strategy for Researchers (HRS4R)</span>
+                        <div class="email">
+                            <img src="images/email_icon.png" alt="email_icon">
+                            <a href="mailto:john_doe1998@gmail.com">john_doe1998@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-resources" id="resources">
+            <div class="section-title"><h2>Resources</h2></div>
+            <div class="content">
+                <div class="content-inner">
+                    <div class="resource-card">
+                        <div class="image-container">
+                            <img src="https://img.freepik.com/free-vector/document-vector-colorful-design_341269-1262.jpg" alt="" width="100%" height="100%">
+                        </div>
+
+                        <div class="text-container">
+                            <h4>Action Plan</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ducimus eos nobis perferendis quam repellat. Ad dolore ea expedita iusto nesciunt? Atque corporis deleniti molestias omnis quis repudiandae sed suscipit!</p>
+                            <a href="" class="button2">more</a>
+                        </div>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="image-container">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1006/1006647.png" alt="" width="100%" height="100%">
+                        </div>
+
+                        <div class="text-container">
+                            <h4>The European Charter for Researchers</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ducimus eos nobis perferendis quam repellat. Ad dolore ea expedita iusto nesciunt? Atque corporis deleniti molestias omnis quis repudiandae sed suscipit!</p>
+                            <a href="" class="button2">more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-project-info" id="project_info">
+            <div class="section-title"><h2>Project Information</h2></div>
+            <div class="content">
+                <article>
+                    <div>
+                        <h3>Some information heading #1</h3>
+                        <button onclick="expandContent(this)"></button>
+                    </div>
+                    <p class="collapsed">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolorem dolores earum molestiae ratione! Ab ad amet autem cum deleniti fuga fugit non pariatur praesentium qui reiciendis, sed sit voluptas!
+                        <br><br>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias amet consectetur corporis earum eius ipsam porro sit, vel veniam! Blanditiis culpa dignissimos eligendi est nesciunt nostrum quibusdam totam voluptatum.
+                        <br><br>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad cumque, enim eos in ipsum iste molestias nam nostrum placeat quam qui quis ratione rerum sapiente vero voluptatem voluptatibus. Quas.
+                    </p>
+                </article>
+
+                <article>
+                    <div>
+                        <h3>Some information heading #2</h3>
+                        <button onclick="expandContent(this)"></button>
+                    </div>
+                    <p class="collapsed">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolorem dolores earum molestiae ratione! Ab ad amet autem cum deleniti fuga fugit non pariatur praesentium qui reiciendis, sed sit voluptas!
+                        <br><br>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias amet consectetur corporis earum eius ipsam porro sit, vel veniam! Blanditiis culpa dignissimos eligendi est nesciunt nostrum quibusdam totam voluptatum.
+                        <br><br>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad cumque, enim eos in ipsum iste molestias nam nostrum placeat quam qui quis ratione rerum sapiente vero voluptatem voluptatibus. Quas.
+                    </p>
+                </article>
+
+                <article>
+                    <div>
+                        <h3>Some information heading #3</h3>
+                        <button onclick="expandContent(this)"></button>
+                    </div>
+                    <p class="collapsed">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolorem dolores earum molestiae ratione! Ab ad amet autem cum deleniti fuga fugit non pariatur praesentium qui reiciendis, sed sit voluptas!
+                        <br><br>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias amet consectetur corporis earum eius ipsam porro sit, vel veniam! Blanditiis culpa dignissimos eligendi est nesciunt nostrum quibusdam totam voluptatum.
+                        <br><br>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad cumque, enim eos in ipsum iste molestias nam nostrum placeat quam qui quis ratione rerum sapiente vero voluptatem voluptatibus. Quas.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
