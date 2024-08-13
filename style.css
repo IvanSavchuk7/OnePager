@@ -5,6 +5,8 @@
     margin: 0;
     font-family: "Montserrat", sans-serif;
     box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 p {
@@ -12,13 +14,17 @@ p {
 }
 
 .section-title {
-    margin: 70px 0;
+    margin: 4rem 0;
     text-align: center;
 }
 
 .section-title * {
     font-weight: 200;
-    font-size: 42px;
+    font-size: 3rem;
+}
+
+h1 {
+    font-size: 2.5rem;
 }
 
 header {
@@ -51,12 +57,12 @@ main {
 }
 
 main > section {
-    padding: 0 25px;
+    padding: 0 3rem;
 
 }
 
 main > section {
-    margin: 150px 0;
+    margin: 10rem 0;
 }
 
 .section-intro {
@@ -70,15 +76,15 @@ main > section {
 }
 
 .section-intro .content .image-container {
-    width: calc(40% - 25px);
-    height: 450px;
+    width: calc(50% - 1.5rem);
+    height: 650px;
     background: #224a98;
 }
 
 .section-intro .content .text-container {
-    width: calc(60% - 25px);
+    width: calc(50% - 1.5rem);
     padding: 5px 0;
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 .section-anchors > ul {
@@ -112,22 +118,37 @@ main > section {
 }
 
 .section-news .content h3 {
-    font-size: 28px;
+    font-size: 2rem;
     font-weight: 200;
 }
 
 .section-news .content .current-phase {
-    width: calc(50% - 40px);
+    width: calc(40% - 2.5rem);
 }
 
+.section-news .content .current-phase p {
+    font-size: 1.1rem;
+}
+
+/*.section-news .content .current-phase p:before {*/
+/*    left: 0;*/
+/*    content: "";*/
+/*    display: block;*/
+/*    position: absolute;*/
+/*    width: 5px;*/
+/*    background: #224A98;*/
+/*    height: 100%;*/
+/*}*/
+
 .section-news .content .latest-news {
-    width: calc(50% - 40px);
+    width: calc(60% - 2.5rem);
 }
 
 .section-news .content .current-phase > div,
 .section-news .content .latest-news > div
 {
-    margin: 15px 0;
+    position: relative;
+    margin: .7rem 0;
 }
 
 .section-news .content .latest-news h4 {
@@ -160,42 +181,53 @@ main > section {
 .section-resources .content {
     display: flex;
     align-items: center;
-    height: 1000px;
     transform: skewY(-2deg);
     background: linear-gradient(to right, #224A98, #7f7fd5, #86a8e7, #FFFFFF);
 }
 
 .section-resources .content-inner {
+    padding: 5rem;
+    justify-content: center;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     transform: skewY(2deg);
     height: 80%;
-
+    flex-wrap: wrap;
 }
 
 .section-resources .content .resource-card {
+    display: flex;
+    margin: 1.5rem;
+    padding: 1rem;
     background: #FFFFFF;
-    height: 100%;
-    width: 40%;
-    max-width: 390px;
-    max-height: 700px;
+    width: calc(33% - (1.5rem * 2));
+    height: 250px;
+}
+
+.section-resources .content .resource-card:hover {
+    scale: 1.05;
+    transition: all .5s ease;
 }
 
 .resource-card .image-container {
-    height: 50%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(220, 220, 220, 0.36);
 }
 
 .resource-card .text-container {
-    height: 50%;
-    padding: 0 20px;
+    width: 60%;
+    padding: 0 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
 .resource-card .text-container h4 {
-    font-size: 24px;
+    padding: 1rem 0;
+    font-size: 1.2rem;
     font-weight: 300;
 }
 
@@ -206,11 +238,11 @@ main > section {
 .section-project-info article {
     width: 70%;
     border-bottom: 2px solid #224a98;
-    margin: 50px 0;
+    margin: 3rem 0;
 }
 
 .section-project-info article p {
-    padding: 15px 0 10px 0;
+    padding: 1rem 0 .7rem 0;
 }
 
 .section-project-info article > div {
@@ -227,10 +259,10 @@ main > section {
     display: flex;
     align-items: center;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
-button {
+.expand-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -370,8 +402,8 @@ a:hover .button-text {
     padding: 25px;
     display: flex;
     width: 40%;
-    max-width: 500px;
-    height: 240px;
+    max-width: 560px;
+    height: 300px;
     /*border: 2px solid #224a98;*/
     justify-content: space-between;
     align-items: center;
@@ -392,13 +424,9 @@ a:hover .button-text {
     width: calc(40% - 15px);
     height: 80%;
     border: 2px solid #4E6EAD;
-    background: url("https://cdn-icons-png.flaticon.com/512/1869/1869679.png") bottom;
-    background-size: 120%;
+    background: url("images/contact_card_image.png") bottom;
+    background-size: 110%;
     background-position-y: 0;
-}
-
-.contact-card:last-child .image-container {
-    border-radius: 50%;
 }
 
 .contact-card .info-container {
@@ -410,6 +438,13 @@ a:hover .button-text {
 }
 
 .contact-card .info-container span {
+    font-size: 15px;
+    text-align: justify;
+}
+
+.contact-card .info-container .span-rank {
+    font-size: 13px;
+    font-style: italic;
     text-align: justify;
 }
 
@@ -417,11 +452,6 @@ a:hover .button-text {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.contact-card .info-container .email img {
-    width: 32px;
-    height: 32px;
 }
 
 .contact-card .info-container a {
@@ -437,10 +467,9 @@ a:hover .button-text {
 /*--------------------------*/
 
 
-.button2 {
+.resources_btn {
     display: inline-block;
     margin: 0 auto;
-    width: 50%;
     transition: all 0.2s ease-in;
     position: relative;
     overflow: hidden;
@@ -453,12 +482,12 @@ a:hover .button-text {
     box-shadow: 0 27px 71px rgba(34, 74, 152, 0.3), 0 1px 2px rgba(36, 125, 219, 0.3);
 }
 
-.button2:active {
+.resources_btn:active {
     color: #666;
     box-shadow: 0 27px 71px rgba(34, 74, 152, 0.3), 0 1px 2px rgba(36, 125, 219, 0.3);
 }
 
-.button2:before {
+.resources_btn:before {
     content: "";
     position: absolute;
     left: 50%;
@@ -472,7 +501,7 @@ a:hover .button-text {
     z-index: -1;
 }
 
-.button2:after {
+.resources_btn:after {
     content: "";
     position: absolute;
     left: 55%;
@@ -485,18 +514,18 @@ a:hover .button-text {
     z-index: -1;
 }
 
-.button2:hover {
+.resources_btn:hover {
     color: #ffffff;
     border: 1px solid #224a98;
 }
 
-.button2:hover:before {
+.resources_btn:hover:before {
     top: -35%;
     background-color: #224a98;
     transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }
 
-.button2:hover:after {
+.resources_btn:hover:after {
     top: -45%;
     background-color: #224a98;
     transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
@@ -563,4 +592,111 @@ a:hover .button-text {
     --rotate-bar-one: 45deg;
     --rotate-bar-three: -45deg;
 }
+
+.text-separator {
+    border: none;
+    background-color: rgba(153, 65, 252, .7);
+    height: 1px;
+    margin: 2rem auto;
+    overflow: hidden;
+    width: 80%;
+}
+
+/*--------------------------*/
+/* contact card socials buttons animation */
+/*--------------------------*/
+
+.card {
+
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 5px;
+    gap: 20px;
+}
+
+.socialContainer {
+    width: 38px;
+    height: 38px;
+    background-color: rgba(153, 65, 252, .9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+}
+
+.containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+}
+
+.containerTwo:hover {
+    background-color: #0072b1;
+    transition-duration: .3s;
+}
+
+.containerThree:hover {
+
+    background-color: #128C7E;
+    transition-duration: .3s;
+}
+
+.containerFour:hover {
+
+    background-color: #ee781c;
+    transition-duration: .3s;
+}
+
+.socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+}
+
+.socialSvg path {
+    fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.lang-btn-wrapper {
+    position: fixed;
+    top: 90%;
+    width: 98%;
+    display: flex;
+    justify-content: end;
+    z-index: 1000;
+}
+
+.lang-btn-wrapper button {
+    padding: 10px 5px;
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 2px solid #9941fc;
+    cursor: pointer;
+}
+
+.lang-btn-wrapper button:hover {
+    transform: scale(1.1);
+    transition-duration: .3s;
+}
+
+
 
