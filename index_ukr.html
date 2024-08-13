@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function expandContent(button) {
+            const articleDiv = button.parentNode;
+            const paragraph = articleDiv.nextElementSibling;
+            if (paragraph.classList.contains('collapsed')) {
+                paragraph.classList.remove('collapsed');
+                paragraph.classList.add('expanded');
+            } else {
+                paragraph.classList.remove('expanded');
+                paragraph.classList.add('collapsed');
+            }
+            button.classList.toggle('rotated');
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+<header>
+    <div class="bg-block"></div>
+    <div class="header-inner">
+        <h1>
+            HR-стратегія для дослідників у Житомирській політехніці
+        </h1>
+    </div>
+</header>
+
+<main>
+    <section class="section-intro" id="intro">
+        <div class="section-title"><h2>Про ініціативу</h2></div>
+
+        <div class="content">
+            <div class="image-container" style="font-size: 60px; display:flex; justify-content:center;align-items: center">
+                <img src="images/hrsfr_roadmap_ukr.png" alt="" width="100%" height="100%">
+            </div>
+
+            <div class="text-container">
+                <p>
+                    У 2005 році Європейська комісія опублікувала Європейську хартію для дослідників та Кодекс поведінки при наймі дослідників.
+                </p>
+                <hr class="text-separator">
+
+                <p>
+                    Поточна версія, яка називається &quot;Європейська хартія для дослідників&quot;, була прийнята у 2023 році і складається з чотирьох напрямків, що включають 20 принципів:
+                    - Етика, доброчесність, гендер та відкрита наука (8 принципів)
+                    - Оцінювання, найм та кар'єрний ріст дослідників (4 принципи)
+                    - Умови та процедури трудової діяльності (4 принципи)
+                    - Наукова кар'єра та розвиток талантів (4 принципи)
+                </p>
+                <hr class="text-separator">
+
+                <p>
+                    Погоджуючись дотримуватися рекомендацій Хартії та Кодексу, наукові установи (як приватні, так і державні) зобов'язуються вдосконалювати процедури набору персоналу та забезпечувати найкращі можливі умови праці. Ті установи, які доводять свої наміри та прогрес у впровадженні Хартії, нагороджуються відзнакою &quot;HR Excellence in Research&quot;. Володіння цією відзнакою стало вимогою для отримання певних видів європейського фінансування, зокрема, в рамках програми &quot;Горизонт&quot;.
+                </p>
+                <hr class="text-separator">
+
+                <p>
+                    Для того, щоб претендувати на отримання відзнаки &quot;HR Excellence in Research&quot;, інституції повинні прийняти комплексну Стратегію управління людськими ресурсами для дослідників (HRS4R). Ця стратегія надає чіткі вказівки щодо впровадження належних практик підбору персоналу та управління ним, гарантуючи, що установи відповідають високим стандартам, встановленим Хартією.
+                </p>
+                <hr class="text-separator">
+
+                <p>
+                    Державний університет &quot;Житомирська політехніка&quot; є першим університетом в Україні, який впроваджує Стратегію розвитку людських ресурсів для дослідників (HRSfR). Ця інноваційна стратегія відповідає вимогам Європейської Комісії та підкреслює нашу відданість створенню середовища, яке приваблює та утримує найкращі наукові та дослідницькі таланти.
+                </p>
+                <hr class="text-separator">
+
+                <p>
+                    Реалізація цієї стратегії є важливим кроком у створенні сприятливих умов для професійного зростання наших дослідників. Надаючи надійні механізми підтримки, можливості для кар'єрного розвитку та сприятливе дослідницьке середовище, ми прагнемо не лише утримувати найкращі таланти, а й розвивати людський капітал, необхідний для майбутніх інновацій та прогресу України.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-anchors" id="anchors">
+        <ul>
+            <li>
+                <a class="learn-more" href="#news">
+                        <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                        </span>
+                    <span class="button-text">Новини</span>
+                </a>
+            </li>
+            <li>
+                <a class="learn-more" href="#contact">
+                        <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                        </span>
+                    <span class="button-text">Контакти</span>
+                </a>
+            </li>
+            <li>
+                <a class="learn-more" href="#resources">
+                        <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                        </span>
+                    <span class="button-text">Ресурси</span>
+                </a>
+            </li>
+            <li>
+                <a class="learn-more">
+                        <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                        </span>
+                    <span class="button-text">Інформація про проєкт</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="section-news" id="news">
+        <div class="section-title"><h2>Новини</h2></div>
+        <div class="content">
+            <div class="current-phase">
+                <div>
+                    <h3>Поточна фаза</h3>
+                </div>
+                <div class="image-container" style="font-size: 60px; display:flex; justify-content:center;align-items: center">
+                    <img src="images/hrs4r_initial_phase_process_flow_ukr.png" alt="" width="100%" height="100%">
+                </div>
+
+                <div class="text-container">
+                    <p>
+                        Зараз Державний університет &quot;Житомирська політехніка&quot; знаходиться на початковій фазі. Ініціативна група зробила аналіз відповідності Хартії українському законодавству і готується до підписання Хартії на рівні університету, аналізу невідповідностей та розробки плану дій.
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="latest-news">
+                <div>
+                    <h3>Останні Новини</h3>
+                </div>
+
+                <div>
+                    <h4>
+                        Серпень 2024 - Команда впровадження HRSfR зробила аналіз сумісності Європейської хартії дослідників із українським законодавством
+                    </h4>
+                    <p>
+                        Команда проаналізувала усі 20 принципів Європейської хартії для дослідників та порівняла їх з положеннями Кодексу законів про працю, Закону України &quot;Про вищу освіту&quot; та інших нормативних документів, що регламентують наукову і дослідницьку діяльнсіть в Україні. Також команда дала свої рекомендації щодо доцільності прийняття кожного з принципів при підписанні декларації щодо впровадження Хартії в українських університетах.&#10;Аналіз засвідчив, що Хартія не протирічить законодавству України і може бути підписана в повному обсязі без застережень, проте деякі з її принципів мають бути реалізовані процедурами і регуляціями на рівні університету.
+                        <br>
+                        <br>
+                        Аналіз засвідчив, що Хартія не протирічить законодавству України і може бути підписана в повному обсязі без застережень, проте деякі з її принципів мають бути реалізовані процедурами і регуляціями на рівні університету.
+                    </p>
+                </div>
+                <div>
+                    <h4>
+                        Травень 2024 - Семінар «Стратегія ЄС щодо управління людськими ресурсами для дослідників (HRS4R)» з доктором Герхардом Дудою
+                    </h4>
+                    <p>
+                        28-29 травня в Державному університеті «Житомирська політехніка» пройшлов дводенний семінар «Стратегія ЄС щодо управління людськими ресурсами для дослідників (HRS4R)», який провів доктор Герхард Дуда, екс-голова дослідницького комітету Німецької асоціації ректорів, експерт Єврокомісії з питань досліджень та інновацій і член спеціальної групи Європейської асоціації університетів з питань України.
+                        <br>
+                        <br>
+                        Участь в семінарі взяли представники Сумського державного університету, Маріупольського державного університету, Національного авіаційного університету, НТУ «Дніпровська політехніка», Житомирського державного університету імені Івана Франка та Державного університету &quot;Житомирська Політехніка&quot;
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section  class="section-contact" id="contact">
+        <div class="section-title"><h2>Контакти</h2></div>
+        <div class="content">
+            <div class="contact-card">
+                <div class="card-icon"></div>
+
+                <div class="image-container">
+
+                </div>
+
+                <div class="info-container">
+                    <h4>В'ячеслав Ткачук</h4>
+                    <span>
+                        Керівник Центру розвитку професійної кар'єри Державного університету «Житомирська політехніка
+                    </span>
+                    <span class="span-rank">
+                            к.е.н., доцент кафедри фінансів та цифрової економіки
+                    </span>
+                    <div class="card">
+                        <a href="mailto:crpk@ztu.edu.ua" target="_blank" class="socialContainer containerOne">
+                            <img src="images/mail_icon.svg" alt="" class="socialSvg instagramSvg" width="75%" height="75%">
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/viacheslav-tkachuk-a9ab5511a/" target="_blank" class="socialContainer containerTwo">
+                            <img src="images/linkedin_icon.svg" alt="" class="socialSvg linkdinSvg" width="50%" height="50%">
+                        </a>
+
+
+                        <a href="tel:+380676951528" target="_blank" class="socialContainer containerThree">
+                            <img src="images/phone_icon.svg" alt="" class="socialSvg whatsappSvg" width="50%" height="50%">
+                        </a>
+                        <a href="https://ztu.edu.ua/teacher/90.html" target="_blank" class="socialContainer containerFour">
+                            <img src="images/ztu_icon.svg" alt="" class="socialSvg whatsappSvg" width="60%" height="60%">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-resources" id="resources">
+        <div class="section-title"><h2>Ресурси</h2></div>
+        <div class="content">
+            <div class="content-inner">
+                <div class="resource-card">
+                    <div class="image-container">
+                        <img src="images/google-docs_icon.svg" alt="" width="80%" height="80%">
+                    </div>
+
+                    <div class="text-container">
+                        <h4>
+                            Відповідність Європейської хартії для дослідників українському законодавству (українською мовою)
+                        </h4>
+                        <a href="https://docs.google.com/spreadsheets/d/16F_kcSawERJeEQFaz17VjjiZF5KHtdgK" target="_blank" class="resources_btn">детальніше</a>
+                    </div>
+                </div>
+
+                <div class="resource-card">
+                    <div class="image-container">
+                        <img src="images/pdf_icon.svg" alt="" width="80%" height="80%">
+                    </div>
+
+                    <div class="text-container">
+                        <h4>
+                            Європейська хартія дослідників 2023 (англійською мовою)
+                        </h4>
+                        <a href="https://data.consilium.europa.eu/doc/document/ST-15135-2023-ADD-1/en/pdf" target="_blank" class="resources_btn">детальніше</a>
+                    </div>
+                </div>
+
+                <div class="resource-card">
+                    <div class="image-container">
+                        <img src="images/google-docs_icon.svg" alt="" width="80%" height="80%">
+                    </div>
+
+                    <div class="text-container">
+                        <h4>
+                            Європейська хартія дослідників 2023 (українською мовою - неофіційний переклад)
+                        </h4>
+                        <a href="https://docs.google.com/document/d/16hLBxoDws8LXzV33I9WsdHQHa468qOiu/edit?usp=drive_link&ouid=103193017920994251186&rtpof=true&sd=true" target="_blank" class="resources_btn">детальніше</a>
+                    </div>
+                </div>
+
+                <div class="resource-card">
+                    <div class="image-container">
+                        <img src="images/pdf_icon.svg" alt="" width="80%" height="80%">
+                    </div>
+
+                    <div class="text-container">
+                        <h4>
+                            Методичні рекомендації для інституцій з реалізації HRS4R (англійською мовою)
+                        </h4>
+                        <a href="https://euraxess.ec.europa.eu/sites/default/files/policy_library/HRS4R%20Technical%20Guidelines%20for%20Institutions_6.pdf" target="_blank" class="resources_btn">детальніше</a>
+                    </div>
+                </div>
+
+                <div class="resource-card">
+                    <div class="image-container">
+                        <img src="images/word-document_icon.svg" alt="" width="80%" height="80%">
+                    </div>
+
+                    <div class="text-container">
+                        <h4>
+                            Аналіз недоліків - шаблон процесу (англійською мовою)
+                        </h4>
+                        <a href="https://euraxess.ec.europa.eu/sites/default/files/template_1-_process.docx" target="_blank" class="resources_btn">детальніше</a>
+                    </div>
+                </div>
+
+                <div class="resource-card">
+                    <div class="image-container">
+                        <img src="images/word-document_icon.svg" alt="" width="80%" height="80%">
+                    </div>
+
+                    <div class="text-container">
+                        <h4>
+                            Аналіз недоліків - шаблон огляду (англійською мовою)
+                        </h4>
+                        <a href="https://euraxess.ec.europa.eu/sites/default/files/gap_analysis_template_2_overview_2_0.docx" target="_blank" class="resources_btn">детальніше</a>
+                    </div>
+                </div>
+
+                <div class="resource-card">
+                    <div class="image-container">
+                        <img src="images/word-document_icon.svg" alt="" width="80%" height="80%">
+                    </div>
+
+                    <div class="text-container">
+                        <h4>
+                            Шаблон контрольного списку ОТМ-Р (англійською мовою)
+                        </h4>
+                        <a href="https://euraxess.ec.europa.eu/sites/default/files/template_3-otm-r_checklist.docx" target="_blank" class="resources_btn">детальніше</a>
+                    </div>
+                </div>
+
+                <div class="resource-card">
+                    <div class="image-container">
+                        <img src="images/word-document_icon.svg" alt="" width="80%" height="80%">
+                    </div>
+
+                    <div class="text-container">
+                        <h4>
+                            Шаблон плану дій (англійською)
+                        </h4>
+                        <a href="https://euraxess.ec.europa.eu/sites/default/files/template_4-action_plan.doc" target="_blank" class="resources_btn">детальніше</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-project-info" id="project_info">
+        <div class="section-title"><h2>Інформація про проєкт</h2></div>
+        <div class="content">
+            <article>
+                <div>
+                    <h3>Стан справ</h3>
+                    <button onclick="expandContent(this)" class="expand-btn"></button>
+                </div>
+                <p>
+                    Зараз Державний університет &quot;Житомирська політехніка&quot; знаходиться на початковій фазі. Ініціативна група зробила аналіз відповідності Хартії українському законодавству і готується до підписання Хартії на рівні університету, аналізу невідповідностей, заповнення контрольного переліку OTM-R та розробки плану дій.
+                </p>
+            </article>
+
+            <article>
+                <div>
+                    <h3>Документи і посилання</h3>
+                    <button onclick="expandContent(this)" class="expand-btn"></button>
+                </div>
+                <p class="collapsed">
+                    <br>
+                    <br>
+                </p>
+            </article>
+        </div>
+    </section>
+</main>
+</body>
+</html>
