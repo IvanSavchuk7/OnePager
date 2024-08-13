@@ -538,7 +538,7 @@ a:hover .button-text {
 
 .icon-menu {
     --gap: 5px;
-    --height-bar: 2.5px;
+    --height-bar: 2px;
     --pos-y-bar-one: 0;
     --pos-y-bar-three: 0;
     --scale-bar: 1;
