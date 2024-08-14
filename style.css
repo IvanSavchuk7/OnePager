@@ -868,6 +868,10 @@ a:hover .button-text {
         padding: 2rem;
     }
 
+    .contact-card .card {
+        width: 100%;
+    }
+
     .section-resources .content-inner {
         padding: 4rem 1rem;
     }
