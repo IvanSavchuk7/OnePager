@@ -20,7 +20,7 @@ p {
 
 .section-title * {
     font-weight: 200;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 h1 {
@@ -916,6 +916,10 @@ a:hover .button-text {
     .resource-card .image-container {
         width: 100%;
         height: 50%;
+    }
+
+    h1 {
+        font-size: 1.7rem;
     }
 }
 
