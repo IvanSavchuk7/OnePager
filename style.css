@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap');
+:root {
+    --color-blue: #224A98;
+    --color-bg: #FFFFFF;
+    --gradient-bg: linear-gradient(to right, var(--color-blue), #7f7fd5, #86a8e7, #FFFFFF);
+}
 
 * {
     padding: 0;
@@ -13,18 +18,36 @@ p {
     text-align: justify;
 }
 
-.section-title {
+.intro-title, .news-title, .contact-title, .resources-title, .project-info-title {
     margin: 4rem 0;
     text-align: center;
 }
 
-.section-title * {
+.intro-title * {
     font-weight: 200;
     font-size: 2.5rem;
 }
 
+
+
 h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h3 {
     font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.75rem;
+}
+
+h2, h3 {
+    font-weight: 300;
 }
 
 header {
@@ -32,9 +55,10 @@ header {
     transform: skewY(-2deg);
     display: flex;
     align-items: center;
-    background: linear-gradient(to right, #224A98, #7f7fd5, #86a8e7, #FFFFFF);}
+    background: var(--gradient-bg);
+}
 
-.header-inner {
+.header-content {
     transform: skewY(2deg);
     margin-left: 40px;
     position: absolute;
@@ -44,13 +68,13 @@ header {
     width: 70%;
 }
 
-.bg-block {
+.header-bg {
     transform: skewY(2deg);
     top: 0;
     position: absolute;
     width: 100%;
     height: 100px;
-    background: linear-gradient(to right, #224A98, #7f7fd5, #86a8e7, #FFFFFF);
+    background: var(--gradient-bg);
 }
 
 main {
@@ -61,132 +85,121 @@ main > section {
     margin: 10rem 0;
 }
 
-.section-intro {
+.intro-section {
     display: flex;
     flex-direction: column;
 }
 
-.section-intro .content {
+.intro-content {
     display: flex;
     justify-content: space-between;
 }
 
-.section-intro .content .image-container {
+.intro-image-container {
     width: calc(50% - 1.5rem);
     height: 40rem;
-    background: #224a98;
+    background: var(--color-blue);
 }
 
-.section-intro .content .text-container {
+.intro-text-container {
     width: calc(50% - 1.5rem);
     padding: 5px 0;
     font-size: 1rem;
 }
 
-.section-anchors > ul {
+.navigation-section > ul {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
 }
 
-.section-anchors > ul > li {
-    border: 2px solid #224a98;
+.navigation-section > ul > li {
+    border: 2px solid var(--color-blue);
     width: calc(90% / 4);
 }
 
-.section-news {
+.news-section {
     display: flex;
     flex-direction: column;
 }
 
-.section-news .content {
+.news-content {
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
-.section-news hr {
-    border: 2px solid #224a98;
+.news-section hr {
+    border: 2px solid var(--color-blue);
 }
 
-.section-news .content > div {
+.news-content > div {
     display: flex;
     flex-direction: column;
 }
 
-.section-news .content h3 {
+.news-content h3 {
     font-size: 2rem;
     font-weight: 200;
 }
 
-.section-news .content .current-phase {
+.news-current-phase {
     width: calc(40% - 2.5rem);
 }
 
-.section-news .content .current-phase p {
+.news-current-phase p {
     font-size: 1.1rem;
 }
 
-/*.section-news .content .current-phase p:before {*/
-/*    left: 0;*/
-/*    content: "";*/
-/*    display: block;*/
-/*    position: absolute;*/
-/*    width: 5px;*/
-/*    background: #224A98;*/
-/*    height: 100%;*/
-/*}*/
-
-.section-news .content .latest-news {
+.news-latest {
     width: calc(60% - 2.5rem);
 }
 
-.section-news .content .current-phase > div,
-.section-news .content .latest-news > div
-{
+.news-current-phase > div,
+.news-latest > div {
     position: relative;
     margin: .7rem 0;
 }
 
-.section-news .content .latest-news h4 {
+.news-latest h4 {
     font-size: 1.1rem;
     font-weight: 500;
     padding: .5rem 0 .5rem 0;
 }
 
-.section-news .content .latest-news .resources_btn {
+.news-latest .resources-button {
     margin-top: 1.5rem;
     box-shadow: 0 10px 10px rgba(34, 74, 152, 0.3), 0 1px 2px rgba(36, 125, 219, 0.3);
 }
 
-.section-news .content .image-container {
+.news-image-container {
     height: 500px;
-    background: #224a98;
+    background: var(--color-blue);
 }
 
-.section-contact {
+.contact-section {
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
-.section-contact .content {
+.contact-content {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.section-resources {
+.resources-section {
     padding: 0;
 }
 
-.section-resources .content {
+.resources-content {
     display: flex;
     align-items: center;
     transform: skewY(-2deg);
-    background: linear-gradient(to right, #224A98, #7f7fd5, #86a8e7, #FFFFFF);
+    background: var(--gradient-bg);
 }
 
-.section-resources .content-inner {
+.resources-inner {
     padding: 5rem;
     justify-content: center;
     display: flex;
@@ -196,7 +209,7 @@ main > section {
     flex-wrap: wrap;
 }
 
-.section-resources .content .resource-card {
+.resources-card {
     display: flex;
     margin: 1rem;
     padding: 1rem;
@@ -205,12 +218,12 @@ main > section {
     height: 280px;
 }
 
-.section-resources .content .resource-card:hover {
+.resources-card:hover {
     scale: 1.05;
     transition: all .5s ease;
 }
 
-.resource-card .image-container {
+.resources-card .resources-image-container {
     width: 40%;
     display: flex;
     justify-content: center;
@@ -218,7 +231,7 @@ main > section {
     background: rgba(220, 220, 220, 0.36);
 }
 
-.resource-card .text-container {
+.resources-card .resources-text-container {
     width: 60%;
     padding: 0 1rem;
     display: flex;
@@ -226,36 +239,32 @@ main > section {
     justify-content: space-between;
 }
 
-.resource-card .text-container h4 {
+.resources-card .resources-text-container h4 {
     padding: 1rem 0;
     font-size: 1.2rem;
     font-weight: 300;
 }
 
-.resource-card .text-container a {
+.resources-card .resources-text-container a {
     text-align: center;
 }
 
-.section-project-info article {
+.project-info-section article {
     width: 70%;
-    border-bottom: 2px solid #224a98;
+    border-bottom: 2px solid var(--color-blue);
     margin: 3rem 0;
 }
 
-.section-project-info article p {
+.project-info-section article p {
     padding: 1rem 0 .7rem 0;
 }
 
-.section-project-info article > div {
+.project-info-section article > div {
     display: flex;
     justify-content: space-between;
 }
 
-.section-project-info article {
-
-}
-
-.section-project-info article > div h3 {
+.project-info-section article > div h3 {
     width: 90%;
     display: flex;
     align-items: center;
@@ -263,7 +272,7 @@ main > section {
     font-size: 1.5rem;
 }
 
-.expand-btn {
+.project-info-expand-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -272,9 +281,8 @@ main > section {
     background-size: contain;
     width: 36px;
     height: 36px;
-    border: 2px solid #224a98;
+    border: 2px solid var(--color-blue);
     transition: all .7s ease;
-
 }
 
 .collapsed {
@@ -297,12 +305,9 @@ main > section {
     transform: rotate(-180deg);
 }
 
-
-
 /*--------------------------*/
 /* anchor buttons animation */
 /*--------------------------*/
-
 
 a {
     position: relative;
@@ -318,22 +323,22 @@ a {
     font-family: inherit;
 }
 
-a.learn-more {
+.anchor-link {
     width: 101%;
     height: auto;
 }
 
-a.learn-more .circle {
+.anchor-circle {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: relative;
     display: block;
     margin: 0;
     width: 3rem;
     height: 3rem;
-    background: #224a98;
+    background: var(--color-blue);
 }
 
-a.learn-more .circle .icon {
+.anchor-icon {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: absolute;
     top: 0;
@@ -342,7 +347,7 @@ a.learn-more .circle .icon {
     background: #fff;
 }
 
-a.learn-more .circle .icon.arrow {
+.anchor-icon.arrow {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     left: 0.625rem;
     width: 1.125rem;
@@ -350,7 +355,7 @@ a.learn-more .circle .icon.arrow {
     background: none;
 }
 
-a.learn-more .circle .icon.arrow::before {
+.anchor-icon.arrow::before {
     position: absolute;
     content: "";
     top: -0.29rem;
@@ -362,7 +367,7 @@ a.learn-more .circle .icon.arrow::before {
     transform: rotate(45deg);
 }
 
-a.learn-more .button-text {
+.anchor-text {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: absolute;
     top: 0;
@@ -371,7 +376,7 @@ a.learn-more .button-text {
     bottom: 0;
     padding: 0.75rem 0;
     margin: 0 0 0 1.85rem;
-    color: #224a98;
+    color: var(--color-blue);
     font-weight: 700;
     line-height: 1.6;
     font-size: .9rem;
@@ -379,27 +384,24 @@ a.learn-more .button-text {
     text-transform: uppercase;
 }
 
-a:hover .circle {
+a:hover .anchor-circle {
     width: 100%;
 }
 
-a:hover .circle .icon.arrow {
+a:hover .anchor-icon.arrow {
     background: #fff;
     transform: translate(1rem, 0);
 }
 
-a:hover .button-text {
+a:hover .anchor-text {
     color: #fff;
 }
-
 
 /*--------------------------*/
 /* contact card animation */
 /*--------------------------*/
 
-
-
-.contact-card {
+.contact-info-card {
     position: relative;
     padding: 25px;
     display: flex;
@@ -407,13 +409,12 @@ a:hover .button-text {
     max-width: 560px;
     height: 300px;
     margin: 3rem 0 0 0;
-    /*border: 2px solid #224a98;*/
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 27px 71px rgba(34, 74, 152, 0.3), 0 1px 2px rgba(36, 125, 219, 0.3);
 }
 
-.contact-card .card-icon {
+.contact-icon {
     width: 48px;
     height: 48px;
     background: url("images/employee_icon.png") center;
@@ -423,7 +424,7 @@ a:hover .button-text {
     top: -7%;
 }
 
-.contact-card .image-container {
+.contact-image-container {
     width: calc(40% - 15px);
     height: 90%;
     border: 2px solid #4E6EAD;
@@ -432,7 +433,7 @@ a:hover .button-text {
     background-position-y: 0;
 }
 
-.contact-card .info-container {
+.contact-info-container {
     width: calc(60% - 15px);
     height: 90%;
     display: flex;
@@ -440,37 +441,35 @@ a:hover .button-text {
     justify-content: space-between;
 }
 
-.contact-card .info-container span {
+.contact-info-container span {
     font-size: 15px;
     text-align: justify;
 }
 
-.contact-card .info-container .span-rank {
+.contact-rank {
     font-size: 13px;
     font-style: italic;
     text-align: justify;
 }
 
-.contact-card .info-container .email {
+.contact-info-container .email {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.contact-card .info-container a {
+.contact-info-container a {
     color: black;
     font-size: 14px;
     text-align: justify;
     font-weight: bold;
 }
 
-
 /*--------------------------*/
 /* document card button animation */
 /*--------------------------*/
 
-
-.resources_btn {
+.resources-button {
     display: inline-block;
     margin: 0 auto .5rem auto;
     transition: all 0.2s ease-in;
@@ -485,12 +484,12 @@ a:hover .button-text {
     box-shadow: 0 27px 71px rgba(34, 74, 152, 0.3), 0 1px 2px rgba(36, 125, 219, 0.3);
 }
 
-.resources_btn:active {
+.resources-button:active {
     color: #666;
     box-shadow: 0 27px 71px rgba(34, 74, 152, 0.3), 0 1px 2px rgba(36, 125, 219, 0.3);
 }
 
-.resources_btn:before {
+.resources-button:before {
     content: "";
     position: absolute;
     left: 50%;
@@ -504,7 +503,7 @@ a:hover .button-text {
     z-index: -1;
 }
 
-.resources_btn:after {
+.resources-button:after {
     content: "";
     position: absolute;
     left: 55%;
@@ -517,23 +516,22 @@ a:hover .button-text {
     z-index: -1;
 }
 
-.resources_btn:hover {
+.resources-button:hover {
     color: #ffffff;
-    border: 1px solid #224a98;
+    border: 1px solid var(--color-blue);
 }
 
-.resources_btn:hover:before {
+.resources-button:hover:before {
     top: -35%;
-    background-color: #224a98;
+    background-color: var(--color-blue);
     transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }
 
-.resources_btn:hover:after {
+.resources-button:hover:after {
     top: -45%;
-    background-color: #224a98;
+    background-color: var(--color-blue);
     transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }
-
 
 /*--------------------------*/
 /* project info expand button animation */
@@ -596,7 +594,7 @@ a:hover .button-text {
     --rotate-bar-three: -45deg;
 }
 
-.text-separator {
+.intro-text-separator {
     border: none;
     background-color: rgba(153, 65, 252, .7);
     height: 1px;
@@ -609,8 +607,7 @@ a:hover .button-text {
 /* contact card socials buttons animation */
 /*--------------------------*/
 
-.card {
-
+.contact-card-socials {
     height: fit-content;
     display: flex;
     align-items: center;
@@ -619,7 +616,7 @@ a:hover .button-text {
     gap: 20px;
 }
 
-.socialContainer {
+.contact-social-link {
     width: 38px;
     height: 38px;
     background-color: rgba(153, 65, 252, .9);
@@ -630,38 +627,36 @@ a:hover .button-text {
     transition-duration: .3s;
 }
 
-.containerOne:hover {
+.contact-mail:hover {
     background-color: #d62976;
     transition-duration: .3s;
 }
 
-.containerTwo:hover {
+.contact-linkedin:hover {
     background-color: #0072b1;
     transition-duration: .3s;
 }
 
-.containerThree:hover {
-
+.contact-phone:hover {
     background-color: #128C7E;
     transition-duration: .3s;
 }
 
-.containerFour:hover {
-
+.contact-ztu:hover {
     background-color: #ee781c;
     transition-duration: .3s;
 }
 
-.socialContainer:active {
+.contact-social-link:active {
     transform: scale(0.9);
     transition-duration: .3s;
 }
 
-.socialSvg path {
+.social-icon path {
     fill: rgb(255, 255, 255);
 }
 
-.socialContainer:hover .socialSvg {
+.contact-social-link:hover .social-icon {
     animation: slide-in-top 0.3s both;
 }
 
@@ -677,7 +672,7 @@ a:hover .button-text {
     }
 }
 
-.lang-btn-wrapper {
+.language-toggle-wrapper {
     position: fixed;
     top: 90%;
     width: 98%;
@@ -686,7 +681,7 @@ a:hover .button-text {
     z-index: 1000;
 }
 
-.lang-btn-wrapper button {
+.language-toggle-wrapper button {
     padding: 10px 5px;
     margin: 5px;
     width: 50px;
@@ -696,7 +691,7 @@ a:hover .button-text {
     cursor: pointer;
 }
 
-.lang-btn-wrapper button:hover {
+.language-toggle-wrapper button:hover {
     transform: scale(1.1);
     transition-duration: .3s;
 }
@@ -706,17 +701,17 @@ a:hover .button-text {
         font-size: 14px;
     }
 
-    .section-intro .content .image-container,
-    .section-intro .content .text-container {
+    .intro-image-container,
+    .intro-text-container {
         width: calc(50%);
     }
 
-    .section-news .content .latest-news,
-    .section-news .content .current-phase {
+    .news-latest,
+    .news-current-phase {
         width: calc(50% - 2rem);
     }
 
-    .section-news .content hr {
+    .news-section hr {
         border-width: 1px;
     }
 
@@ -725,35 +720,35 @@ a:hover .button-text {
         margin: 5rem 0;
     }
 
-    .section-news .content .current-phase {
+    .news-current-phase {
         width: calc(50%);
     }
 
-    .section-contact .content {
+    .contact-content {
         flex-direction: column;
         align-items: center;
     }
 
-    .contact-card {
+    .contact-info-card {
         width: 60%;
         max-width: 650px;
         margin: 3rem 0;
     }
 
-    .contact-card .info-container,
-    .contact-card .image-container {
+    .contact-info-container,
+    .contact-image-container {
         height: 95%;
     }
 
-    .contact-card .info-container .card {
+    .contact-card-socials {
         padding: 0;
     }
 
-    .section-resources .content-inner {
+    .resources-inner {
         padding: 4rem 2rem;
     }
 
-    .section-project-info article {
+    .project-info-section article {
         width: 100%;
     }
 }
@@ -763,43 +758,43 @@ a:hover .button-text {
         font-size: 14px;
     }
 
-    .section-intro .content {
+    .intro-content {
         flex-direction: column;
         align-items: center;
     }
 
-    .section-intro .content .image-container,
-    .section-intro .content .text-container {
+    .intro-image-container,
+    .intro-text-container {
         width: calc(95%);
     }
 
-    .section-anchors > ul {
+    .navigation-section > ul {
         flex-wrap: wrap;
         justify-content: space-around;
     }
 
-    .section-anchors > ul li {
+    .navigation-section > ul li {
         width: 40%;
         margin-top: 1rem;
     }
 
-    .section-news .content {
+    .news-content {
         flex-direction: column;
         align-items: center;
     }
 
-    .section-news .content .latest-news,
-    .section-news .content .current-phase {
+    .news-latest,
+    .news-current-phase {
         width: 95%;
     }
 
-    .section-news .content hr {
+    .news-section hr {
         border-width: 1px;
         width: 95%;
-        margin:2rem 0;
+        margin: 2rem 0;
     }
 
-    .section-news .content h3 {
+    .news-content h3 {
         text-align: center;
     }
 
@@ -808,34 +803,33 @@ a:hover .button-text {
         margin: 5rem 0;
     }
 
-    .section-contact .content {
+    .contact-content {
         flex-direction: column;
         align-items: center;
     }
 
-    .contact-card {
+    .contact-info-card {
         width: 80%;
         max-width: 720px;
     }
 
-    .contact-card .info-container,
-    .contact-card .image-container {
+    .contact-info-container,
+    .contact-image-container {
         height: 95%;
     }
 
-    .contact-card .info-container .card {
+    .contact-card-socials {
         padding: 0;
     }
 
-    .section-resources .content-inner {
+    .resources-inner {
         padding: 4rem 2rem;
     }
 
-    .section-resources .content .resource-card {
+    .resources-card {
         width: 90%;
         height: 240px;
     }
-
 }
 
 @media (max-width: 768px) {
@@ -844,12 +838,12 @@ a:hover .button-text {
         font-size: 13px;
     }
 
-    .contact-card {
+    .contact-info-card {
         width: 85%;
         max-width: 720px;
     }
 
-    .section-news .content .latest-news .resources_btn {
+    .news-latest .resources-button {
         display: flex;
         width: 40%;
         justify-content: center;
@@ -861,59 +855,59 @@ a:hover .button-text {
         font-size: 13px;
     }
 
-    .contact-card {
+    .contact-info-card {
         width: 90%;
         flex-direction: column;
         min-height: 600px;
         padding: 2rem;
     }
 
-    .contact-card .card {
+    .contact-card-socials {
         width: 100%;
     }
 
-    .section-resources .content-inner {
+    .resources-inner {
         padding: 4rem 1rem;
     }
 
-    .contact-card .image-container,
-    .contact-card .info-container {
+    .contact-image-container,
+    .contact-info-container {
         width: 80%;
         justify-content: space-around;
         align-items: center;
     }
 
-    .section-anchors > ul li {
+    .navigation-section > ul li {
         justify-content: left;
         width: 80%;
         margin-top: 1rem;
     }
 
-    .section-intro .content .image-container {
-        height: 25rem
-    }
-
-    .section-news .content .image-container {
+    .intro-image-container {
         height: 25rem;
     }
 
-    .section-news .content .latest-news .resources_btn {
+    .news-image-container {
+        height: 25rem;
+    }
+
+    .news-latest .resources-button {
         display: flex;
         width: 60%;
     }
 
-    .resource-card {
+    .resources-card {
         flex-direction: column;
         height: 400px !important;
         width: 100%;
     }
 
-    .resource-card .resources_btn {
+    .resources-button {
         width: 100%;
     }
 
-    .resource-card .text-container,
-    .resource-card .image-container {
+    .resources-text-container,
+    .resources-image-container {
         width: 100%;
         height: 50%;
     }
@@ -922,4 +916,5 @@ a:hover .button-text {
         font-size: 1.7rem;
     }
 }
+
 
