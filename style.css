@@ -31,19 +31,19 @@ p {
 
 
 h1 {
-    font-size: 2.5rem;
-}
-
-h2 {
     font-size: 2.25rem;
 }
 
-h3 {
+h2 {
     font-size: 2rem;
 }
 
-h4 {
+h3 {
     font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
 }
 
 h2, h3 {
@@ -223,7 +223,7 @@ main > section {
     transition: all .5s ease;
 }
 
-.resources-card .resources-image-container {
+.resources-image-container {
     width: 40%;
     display: flex;
     justify-content: center;
@@ -231,7 +231,7 @@ main > section {
     background: rgba(220, 220, 220, 0.36);
 }
 
-.resources-card .resources-text-container {
+.resources-text-container {
     width: 60%;
     padding: 0 1rem;
     display: flex;
@@ -239,13 +239,13 @@ main > section {
     justify-content: space-between;
 }
 
-.resources-card .resources-text-container h4 {
+.resources-text-container h4 {
     padding: 1rem 0;
     font-size: 1.2rem;
     font-weight: 300;
 }
 
-.resources-card .resources-text-container a {
+.resources-text-container a {
     text-align: center;
 }
 
@@ -406,7 +406,7 @@ a:hover .anchor-text {
     padding: 25px;
     display: flex;
     width: calc(50% - .5rem);
-    max-width: 560px;
+    max-width: 650px;
     height: 300px;
     margin: 3rem 0 0 0;
     justify-content: space-between;
@@ -859,7 +859,7 @@ a:hover .anchor-text {
         width: 90%;
         flex-direction: column;
         min-height: 600px;
-        padding: 2rem;
+        padding: 1.25rem;
     }
 
     .contact-card-socials {
@@ -872,7 +872,7 @@ a:hover .anchor-text {
 
     .contact-image-container,
     .contact-info-container {
-        width: 80%;
+        width: 100%;
         justify-content: space-around;
         align-items: center;
     }
@@ -898,12 +898,17 @@ a:hover .anchor-text {
 
     .resources-card {
         flex-direction: column;
-        height: 400px !important;
+        height: 450px !important;
         width: 100%;
+        overflow: scroll;
     }
 
     .resources-button {
         width: 100%;
+    }
+
+    .resources-text-container h4 {
+        font-size: 1.05rem;
     }
 
     .resources-text-container,
@@ -916,5 +921,3 @@ a:hover .anchor-text {
         font-size: 1.7rem;
     }
 }
-
-
