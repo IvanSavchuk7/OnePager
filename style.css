@@ -672,30 +672,6 @@ a:hover .anchor-text {
     }
 }
 
-.language-toggle-wrapper {
-    position: fixed;
-    top: 90%;
-    width: 98%;
-    display: flex;
-    justify-content: end;
-    z-index: 1000;
-}
-
-.language-toggle-wrapper button {
-    padding: 10px 5px;
-    margin: 5px;
-    width: 50px;
-    height: 50px;
-    background: #FFFFFF;
-    border: 2px solid #9941fc;
-    cursor: pointer;
-}
-
-.language-toggle-wrapper button:hover {
-    transform: scale(1.1);
-    transition-duration: .3s;
-}
-
 @media (max-width: 1200px) {
     * {
         font-size: 14px;
